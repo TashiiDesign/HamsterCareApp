@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hamster Care App</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js" async></script>
+    
+    
+</head>
+
+<body>
+
+    <div  class="section section1" id="section1">
+
+    <h2 class="title is-4 pl-4">Select your species of Hamster</h2>
+        
+        <div class="columns">
+            
+            <div class="column">
+
+                <button class="btn syrian">
+                    <label for="syrian">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/syrian-hamster.jpg" alt="Syrian Hamster image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Syrian Hamster</p>
+                                <p class="content has-text-centered">
+                                    Syrians (also called teddy bear hamsters or golden hamsters) are the largest 
+                                    domesticated species of hamster. They can have a wide variety of colours and patterns
+                                    and is one of the most popular choices when owning a small pet. Their size can make them easier to handle but 
+                                    it should also be noted that all hamsters have their own personalities and no hamster should be classified as more friendly than another of a different species. 
+                                    <br>
+                                    Syrians originate from a small arid region of Northern Syria. 
+                                </p>
+                               
+
+                                <input type="radio" id="syrian" name="hamsterSpecies" value="Syrian">
+
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                </button>
+            </div>
+
+            <div class="column">
+
+                <button class="btn dwarf">
+                    <label for="dwarf">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/dwarf-hamster.jpg" alt="Dwarf Hamster image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Dwarf Hamster</p>
+                                <p class="content has-text-centered">
+                                    The term 'dwarf hamster', now refers to Russian Campbells, Winter White (Djungarian) and Hybrid hamsters. 
+                                    They can be easily identified by their rounder body as well as a prominent stripe along their back (called a Dorsal Stripe). Winter Whites 
+                                    are able to change colour in Winter but it is much more difficult these days to find a pure Russian Campbells or pure Winter White
+                                    because of interbreeding. As a result, most Dwarf Hamsters are Hybrids. <br>
+                                    Their small bodies make them quicker so you better keep a close eye on them!
+                                </p>
+
+                                <input type="radio" id="dwarf" name="hamsterSpecies" value="Dwarf">
+
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                </button>
+            </div>
+
+            <div class="column">
+                <button class="btn chinese">
+                <label for="chinese">
+                
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/chinese-hamster.jpg" alt="Chinese Hamster image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Chinese Hamster</p>
+                                <p class="content has-text-centered">
+                                    Chinese hamsters can be technically classified as Dwarf hamsters as well but are a different species. They can be easily identified by their longer bodies and tails in comparison 
+                                    to other hamster species. They are native to the deserts of Northern China and Mongolia. 
+                                    <br>
+                                    Depending on where you live, Chinese hamsters can be very difficult to acquire and are mostly found on adoption websites or
+                                    special breeders. 
+                                </p>
+
+                                <input type="radio" id="chinese" name="hamsterSpecies" value="Chinese" >
+
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                </button>
+
+            </div>
+          
+
+            <div class="column">
+
+                <button class="btn robo">
+                <label for="robo">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/robo-hamster.jpg" alt="Roborovski Hamster image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Roborovski Hamster</p>
+                                <p class="content has-text-centered">
+                                    Roborovski hamsters are also classified as Dwarf hamsters but again, are a very different species. They are the smallest hamsters 
+                                    and can be identified by their tiny round bodies and white spots above their eyes that resemble eyebrows. They also lack a dorsal stripe. 
+                                    They are native to the deserts of central China. <br>
+                                    Taming a Roborovski hamster can be a challenge because of their speed and size but possible with time and dedication. Due to this fact, small children may 
+                                    have a hard time interacting with them.
+                                </p>
+                                <input type="radio" id="robo" name="hamsterSpecies" value="Roborovski">
+
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                </button>
+            </div>
+
+        </div>
+      
+
+    </div>
+
+
+    <div class="section section2" id="section2">
+       
+        <h2 class="title is-4 pl-4">Enclosure Size Check</h2>
+
+        <div class="columns is-variable is-8">
+
+            <div class="column mr-6 mt-5 is-7 ">
+                <input type="number" id="lengthInput" name="length" class="length input is-medium my-3 " value="" placeholder="Enter Length (cm)"/>
+               
+                <input type="number" id="widthInput"  name="width" class="width input is-medium my-3 " value="" placeholder="Enter Width (cm)"/>
+                <p class="errorMessage">Please enter a number</p>
+            </div>
+
+            <div class="info-box column is-3 is-offset-1">
+                <h3 class="info-heading mt-2 title is-5 ">Did you know?</h3>
+                <p>Hamsters can run up to 9km per night! In the wild, they regularly have to run far in order to find food. Even though 
+                    finding food is not a problem for them as our pets, they still need alot of space to run and explore as it is part
+                    of their natural behaviour.</p>
+                    <p>Don't let their little size fool you!</p>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div class="section section3" id="section3">
+
+        <h2 class="title is-4 pl-4">Select your hamster's enrichment (toys, chews, foraging)</h2>
+
+        <div class="columns">
+
+            <div class="column">
+
+                <button class="btn wheel">
+                    <label for="wheel">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/wheel.jpg" alt="Wheel image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Wheel</p>
+                                <input type="checkbox" id="wheel" name="allToys" class="allToys" value="Wheel">
+                            </div>
+
+            
+                        </div>
+                    </div>
+                </label>
+                </button>
+
+                <br>
+
+                <button class="btn saucer">
+                    <label for="saucer">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/saucer.jpg" alt="Flying Saucer image">
+        
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Flying Saucer</p>
+                                <input type="checkbox" id="saucer" name="allToys" class="allToys" value="Flying Saucer">
+                            </div>
+    
+                        </div>
+                    </div>
+                    </label>
+                </button>
+            
+            
+            </div>
+
+            <div class="column">
+
+                <button class="btn tunnels">
+                    <label for="tunnels">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/tunnel.jpg" alt="Tunnels image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Tunnels</p>
+                                <input type="checkbox" id="tunnels" name="allToys" class="allToys" value="Tunnels">
+                            </div>
+
+                        </div>
+                    </div>
+                </label>
+                </button>
+
+                <br>
+                
+                <button class="btn houses">
+                    <label for="houses">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/house.jpg" alt="Houses image">
+        
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Houses/Hides</p>
+                                <input type="checkbox" id="houses" name="allToys" class="allToys" value="Houses/Hides">
+                        </div>
+ 
+                    </div>
+                 </div>
+                </label>
+                </button>
+            
+            
+            </div>
+
+            
+
+            <div class="column">
+
+                <button class="btn chews">
+                    <label for="chews">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/chews.jpg" alt="Chew Toys image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Chew Toys</p>
+                                <input type="checkbox" id="chews" name="allToys" class="allToys" value="Chew Toys">
+                            </div>
+
+                        </div>
+                    </div>
+                </label>
+                </button>
+
+                <br>
+                
+                <button class="btn sandbox">
+                    <label for="sandbox">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/sandbox.jpg" alt="Sandbox image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Sandbox</p>
+                                <input type="checkbox" id="sandbox" name="allToys" class="allToys" value="Sandbox">
+                            </div>
+
+                        </div>
+                    </div>
+                </label>
+                </button>
+            
+            
+            </div>
+
+            <div class="column">
+
+                <button class="btn substrate">
+                    <label for="substrate">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/substrate.jpg" alt="Substrate image">
+        
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Substrate Variety</p>
+                                <input type="checkbox" id="substrate" name="allToys" class="allToys" value="Substrate">
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                </button>
+
+                <br>
+
+                <button class="btn corklog">
+                    <label for="corklog">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/cork.jpg" alt="Corklogs/Branches image">
+
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Cork logs, Branches</p>
+                                <input type="checkbox" id="corklog" name="allToys" class="allToys" value="Corklogs, Branches">
+                            </div>
+
+                        </div>
+                    </div>
+                </label>
+                </button>
+            
+            
+            </div>
+
+            <div class="column">
+
+                <button class="btn sprays">
+                    <label for="sprays">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/sprays.jpg" alt="Sprays image">
+        
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Sprays (flax, millet)</p>
+                                <input type="checkbox" id="sprays" name="allToys" class="allToys" value="Sprays">
+                            </div>
+    
+                        </div>
+                     </div>
+                    </label>
+                </button>
+
+                <br>
+                
+                <button class="btn herbs">
+                    <label for="herbs">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/herbs.jpeg" alt="Herbs image">
+        
+                            <div class="card-content">
+                                <p class="title is-6 has-text-centered">Herbs and Flowers</p>
+                                <input type="checkbox" id="herbs" name="allToys" class="allToys" value="Herbs">
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                </button>
+            
+            
+            </div>
+
+        </div>     
+
+        <div class="onclickDiv">
+            <input class="submit onclick subtitle" type="submit">
+        </div>
+
+        <div class="error">
+
+        </div>
+        
+    </div>
+   
+   <div class="section section4 displayNone" id="section4">
+
+        <h2 class="title is-4 pl-4">Results</h2>
+
+        <div class="floorspace-box">
+
+            <div class="columns">
+
+                <div class="column">
+                    <p class="subtitle floorspaceTitle">
+                        Your enclosure's size
+                    </p>
+
+                    <p class="floorspace-text yourFloorspace">
+                        
+                    </p>
+                </div>
+
+                <div class="column">
+                    <p class="subtitle is-3 vs has-text-centered">V.S.</p>
+                </div>
+
+                <div class="column">
+                        <p class="subtitle floorspaceTitle">
+                            Minimum Floorspace (U.S.)
+                        </p>
+        
+                        <p class="floorspace-text">
+                            450 sq inches
+                        </p>
+                </div>
+
+            
+
+        </div>
+
+        <div class="resultsText">
+            
+        </div>
+        
+
+        <div class="enrichmentAdvice">
+            <p class="subtitle enrichmentAdviceTitle">Enrichment Advice</p>
+            
+            <div>
+
+                
+                <p>Your enrichment: </p>
+
+                <br>
+
+                <ul class="ul">
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <br>
+                <br>
+
+                <p>Advice:</p>
+
+                <br>
+
+                <ol class="ol">
+                    
+                </ol>
+
+            </div>
+
+
+            
+        </div>
+
+    </div>
+
+    <div class="onclickDiv pt-5">
+        <button class="subtitle onclick redo">Redo</button>
+    </div>
+        
+   </div>
+
+   
+   
+
+    
+</body>
+
+</html>
