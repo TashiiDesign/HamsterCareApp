@@ -7,6 +7,15 @@ body {
     background-color: #f2eeeb;
 }
 
+.logo {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 3em !important;
+    width:50%;
+}
+
 button {
     border: none;
     margin-bottom: 2em;
